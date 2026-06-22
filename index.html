@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snoker Studios - Descarga nuestras aplicaciones móviles. Apps modernas y útiles disponibles para Android.">
+    <meta name="keywords" content="Snoker Studios, apps, aplicaciones, Android, APK, descargar">
+    <meta name="author" content="Snoker Studios">
+    <title>Snoker Studios | Apps</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Snoker Studios</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#apps" class="nav-link">Apps</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Creando experiencias digitales
+            </div>
+            <h1 class="hero-title">
+                Bienvenido a
+                <span class="gradient-text">Snoker Studios</span>
+            </h1>
+            <p class="hero-subtitle">
+                Descubre y descarga nuestras aplicaciones. Diseñadas para ser útiles, modernas y accesibles para todos.
+            </p>
+            <a href="#apps" class="hero-cta">
+                <span>Ver aplicaciones</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- Apps Section -->
+    <section class="apps-section" id="apps">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro catálogo</span>
+                <h2 class="section-title">Aplicaciones</h2>
+                <p class="section-desc">Explora nuestra colección de apps y encuentra la que necesitas.</p>
+            </div>
+
+            <div class="apps-grid">
+                <!-- App Card: Lockes -->
+                <article class="app-card" id="app-lockes">
+                    <div class="app-card-glow"></div>
+                    <div class="app-card-content">
+                        <div class="app-card-header">
+                            <div class="app-icon-wrapper">
+                                <img src="assets/images/lockes-icon.png" alt="Lockes App Icon" class="app-icon">
+                            </div>
+                            <div class="app-info">
+                                <h3 class="app-name">Lockes</h3>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                            <span class="app-badge">Android</span>
+                        </div>
+                        <p class="app-description">
+                            Tu aplicación de seguridad y gestión. Mantén todo bajo control de forma sencilla e intuitiva.
+                        </p>
+                        <div class="app-tags">
+                            <span class="tag">Seguridad</span>
+                            <span class="tag">Gestión</span>
+                            <span class="tag">Utilidad</span>
+                        </div>
+                        <div class="app-actions">
+                            <a href="#" class="btn-download" id="download-lockes" onclick="handleDownload(event, 'Lockes')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                <span>Descargar APK</span>
+                            </a>
+                            <a href="#" class="btn-web" id="web-lockes" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                                <span>Visitar web</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Placeholder Card: More coming soon -->
+                <article class="app-card app-card-placeholder" id="app-coming-soon">
+                    <div class="app-card-content placeholder-content">
+                        <div class="placeholder-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="16"/>
+                                <line x1="8" y1="12" x2="16" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3 class="placeholder-title">Próximamente</h3>
+                        <p class="placeholder-text">Nuevas aplicaciones en camino. ¡Estate atento!</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">Snoker Studios</span>
+                </div>
+                <p class="footer-tagline">Creando aplicaciones con pasión y dedicación.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#apps">Aplicaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Apps</h4>
+                <ul>
+                    <li><a href="#app-lockes">Lockes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Snoker Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <span id="toast-message">Descarga disponible próximamente</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
