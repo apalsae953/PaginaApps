@@ -567,15 +567,47 @@ ul {
     color: var(--accent-blue);
 }
 
-.app-note {
-    margin-top: 16px;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-    background: rgba(255, 255, 255, 0.01);
-    border: 1px solid var(--glass-border);
-    padding: 10px 14px;
+.app-note-ios {
+    margin-top: 20px;
+    padding: 14px 18px;
     border-radius: var(--radius-md);
+    background: rgba(59, 130, 246, 0.04);
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.03);
+    transition: var(--transition-base);
+}
+
+.app-note-ios:hover {
+    background: rgba(59, 130, 246, 0.08);
+    border-color: rgba(59, 130, 246, 0.25);
+    box-shadow: 0 4px 25px rgba(59, 130, 246, 0.08);
+}
+
+.app-note-ios-icon {
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.app-note-ios-text {
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.app-note-ios-text strong {
+    color: var(--text-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
 }
 
 .app-description {
