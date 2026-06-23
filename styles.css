@@ -554,6 +554,30 @@ ul {
     flex-shrink: 0;
 }
 
+.app-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.app-badge.badge-ios {
+    background: rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.2);
+    color: var(--accent-blue);
+}
+
+.app-note {
+    margin-top: 16px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--glass-border);
+    padding: 10px 14px;
+    border-radius: var(--radius-md);
+}
+
 .app-description {
     font-size: var(--font-size-sm);
     color: var(--text-secondary);
