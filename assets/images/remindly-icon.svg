@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Icono de la aplicacion: campana sobre fondo degradado -->
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#4834d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#fondo)"/>
+  <g fill="#ffffff">
+    <circle cx="256" cy="118" r="18"/>
+    <path d="M256 142c-53 0-96 43-96 96v52l-44 36v34h280v-34l-44-36v-52c0-53-43-96-96-96z"/>
+    <circle cx="256" cy="402" r="30"/>
+  </g>
+</svg>
