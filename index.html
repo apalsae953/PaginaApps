@@ -3,590 +3,603 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Snoker Studios · Siete apps gratis para el móvil y el navegador</title>
     <meta name="description"
-        content="Snoker Studios - Descarga nuestras aplicaciones móviles. Apps modernas y útiles disponibles para Android.">
-    <meta name="keywords" content="Snoker Studios, apps, aplicaciones, Android, APK, descargar">
+        content="Siete apps gratis de Snoker Studios: Monet para tus cuentas, Remindly para recordatorios, TeToca para sorteos, Torino Tools para PDFs, Furgolero, D&amp;D Manager y NuzTracker. Se abren en el navegador y tres se instalan en Android.">
     <meta name="author" content="Snoker Studios">
-    <title>Snoker Studios | Apps</title>
+    <meta name="theme-color" content="#e1ac10">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 
-    <!-- Google Fonts -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Snoker Studios">
+    <meta property="og:title" content="Snoker Studios · Siete apps gratis">
+    <meta property="og:description"
+        content="Cuentas, recordatorios, sorteos, PDFs, fútbol, rol y Nuzlockes. Se abren en el navegador y tres se instalan en Android.">
+    <meta property="og:image" content="assets/images/apps/monet.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201563239519414"
         crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Animated background blobs -->
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
-    </div>
+    <a class="skip" href="#apps">Saltar a las apps</a>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-icon">◆</span>
-                <span class="logo-text">Snoker Studios</span>
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#apps" class="nav-link">Apps</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    <header class="bar" id="bar">
+        <a class="wordmark" href="#top">Snoker Studios</a>
+        <nav class="bar-nav" aria-label="Principal">
+            <ul class="bar-links" id="menu">
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#instalar">Instalar</a></li>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#preguntas">Preguntas</a></li>
             </ul>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+        </nav>
+        <a class="btn btn-accent bar-action" href="#apps">Ver las apps</a>
+        <button class="bar-menu" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Creando experiencias digitales
-            </div>
-            <h1 class="hero-title">
-                Bienvenido a
-                <span class="gradient-text">Snoker Studios</span>
+    <main>
+        <!-- Portada: dos campos, el titular cruza la costura -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-field hero-field-top" data-chapter="light"></div>
+            <div class="hero-field hero-field-bottom" data-chapter="dark"></div>
+
+            <h1 class="hero-title" id="hero-title" data-slot="0">
+                <span class="ht ht-a">
+                    <span class="ht-line">Siete apps</span>
+                    <span class="ht-line"><span class="slot" aria-hidden="true"><img src="assets/images/apps/monet.jpg" alt="" data-pos="50% 28%"><img src="assets/images/apps/furgolero.jpg" alt="" data-pos="50% 10%"><img src="assets/images/apps/tetoca.jpg" alt="" data-pos="50% 22%"><img src="assets/images/apps/remindly.jpg" alt="" data-pos="50% 20%"><img src="assets/images/apps/torino.jpg" alt="" data-pos="50% 25%"><img src="assets/images/apps/dnd.jpg" alt="" data-pos="50% 22%"><img src="assets/images/apps/nuztracker.jpg" alt="" data-pos="50% 14%"></span> gratis</span>
+                </span>
+                <span class="ht ht-b" aria-hidden="true">
+                    <span class="ht-line">Siete apps</span>
+                    <span class="ht-line"><span class="slot"><img src="assets/images/apps/monet.jpg" alt="" data-pos="50% 28%"><img src="assets/images/apps/furgolero.jpg" alt="" data-pos="50% 10%"><img src="assets/images/apps/tetoca.jpg" alt="" data-pos="50% 22%"><img src="assets/images/apps/remindly.jpg" alt="" data-pos="50% 20%"><img src="assets/images/apps/torino.jpg" alt="" data-pos="50% 25%"><img src="assets/images/apps/dnd.jpg" alt="" data-pos="50% 22%"><img src="assets/images/apps/nuztracker.jpg" alt="" data-pos="50% 14%"></span> gratis</span>
+                </span>
             </h1>
-            <p class="hero-subtitle">
-                Descubre y descarga nuestras aplicaciones. Diseñadas para ser útiles, modernas y accesibles para todos.
-            </p>
-            <a href="#apps" class="hero-cta">
-                <span>Ver aplicaciones</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 17l9.2-9.2M17 17V7H7" />
-                </svg>
-            </a>
-        </div>
-        <div class="hero-glow"></div>
-    </section>
 
-    <!-- Apps Section -->
-    <section class="apps-section" id="apps">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">Nuestro catálogo</span>
-                <h2 class="section-title">Aplicaciones</h2>
-                <p class="section-desc">Explora nuestra colección de apps y encuentra la que necesitas.</p>
+            <p class="hero-lede">Cuentas, recordatorios, sorteos, PDFs, fútbol, rol y Nuzlockes. Se abren en el
+                navegador y tres se instalan en Android.</p>
+        </section>
+
+        <!-- Buscador: el titular se escribe -->
+        <section class="finder" id="buscar" data-chapter="light" aria-labelledby="finder-title">
+            <div class="finder-line" data-ui>
+                <h2 class="finder-title" id="finder-title">Te toca</h2>
+                <label class="sr-only" for="finder-input">Qué necesitas hacer</label>
+                <input class="finder-input" id="finder-input" type="text" value="hacer las cuentas" placeholder="lo que necesites"
+                    autocomplete="off" spellcheck="false" enterkeyhint="search">
             </div>
 
-            <div class="apps-grid">
-                <!-- App Card: NuzTracker -->
-                <article class="app-card" id="app-nuztracker">
-                    <div class="app-card-glow"></div>
-                    <div class="app-card-content">
-                        <div class="app-card-header">
-                            <div class="app-icon-wrapper">
-                                <img src="assets/images/lockes-icon.png" alt="NuzTracker App Icon" class="app-icon">
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">NuzTracker</h3>
-                                <span class="app-version">v1.0</span>
-                            </div>
-                            <div class="app-badges">
-                                <span class="app-badge badge-android">Android</span>
-                                <span class="app-badge badge-ios">iOS / Web</span>
-                            </div>
-                        </div>
-                        <p class="app-description">
-                            Organiza y haz el seguimiento de tus desafíos Pokémon Nuzlocke. Registra tus encuentros,
-                            muertes y gestiona tu equipo en tiempo real.
-                        </p>
-                        <div class="app-tags">
-                            <span class="tag">Pokémon</span>
-                            <span class="tag">Seguimiento</span>
-                            <span class="tag">Utilidad</span>
-                        </div>
-                        <div class="app-actions">
-                            <a href="assets/nuztracker.apk" download="NuzTracker.apk" class="btn-download"
-                                id="download-nuztracker">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                    <polyline points="7 10 12 15 17 10" />
-                                    <line x1="12" y1="15" x2="12" y2="3" />
-                                </svg>
-                                <span>Descargar APK</span>
-                            </a>
-                            <a href="https://lockes.vercel.app/" class="btn-web" id="web-nuztracker" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                                <span>Visitar web</span>
-                            </a>
-                        </div>
-                        <div class="app-note-ios">
-                            <div class="app-note-ios-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                                    <path d="M12 16V12" />
-                                    <path d="M12 8H12.01" />
-                                </svg>
-                            </div>
-                            <div class="app-note-ios-text">
-                                <strong>¿Usuario de iOS / iPhone?</strong>
-                                <span>Pulsa en <strong>"Visitar web"</strong>, abre el menú de compartir en Safari y
-                                    selecciona <strong>"Añadir a pantalla de inicio"</strong> para instalarla como una
-                                    app nativa (PWA).</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- App Card: TeToca -->
-                <article class="app-card" id="app-tetoca">
-                    <div class="app-card-glow"></div>
-                    <div class="app-card-content">
-                        <div class="app-card-header">
-                            <div class="app-icon-wrapper">
-                                <img src="assets/images/tetoca-icon.svg" alt="TeToca App Icon" class="app-icon">
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">TeToca</h3>
-                                <span class="app-version">v1.0</span>
-                            </div>
-                            <div class="app-badges">
-                                <span class="app-badge badge-ios">iOS / Web</span>
-                            </div>
-                        </div>
-                        <p class="app-description">
-                            Organiza sorteos, amigo invisible y genera equipos equilibrados fácilmente. Todo gratis, sin anuncios y sin necesidad de registro: funciona directamente en tu navegador.
-                        </p>
-                        <div class="app-tags">
-                            <span class="tag">Sorteos</span>
-                            <span class="tag">Equipos</span>
-                            <span class="tag">Utilidades</span>
-                        </div>
-                        <div class="app-actions">
-                            <a href="https://te-toca-beta.vercel.app/" class="btn-download" id="web-tetoca" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                                <span>Visitar web</span>
-                            </a>
-                        </div>
-                        <div class="app-note-ios">
-                            <div class="app-note-ios-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                                    <path d="M12 16V12" />
-                                    <path d="M12 8H12.01" />
-                                </svg>
-                            </div>
-                            <div class="app-note-ios-text">
-                                <strong>¿Usuario de iOS / iPhone?</strong>
-                                <span>Pulsa en <strong>"Visitar web"</strong>, abre el menú de compartir en Safari y
-                                    selecciona <strong>"Añadir a pantalla de inicio"</strong> para instalarla como una
-                                    app nativa (PWA).</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- App Card: Torino Tools -->
-                <article class="app-card" id="app-torino">
-                    <div class="app-card-glow"></div>
-                    <div class="app-card-content">
-                        <div class="app-card-header">
-                            <div class="app-icon-wrapper">
-                                <img src="assets/images/torino-icon.svg" alt="Torino Tools App Icon" class="app-icon">
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">Torino Tools</h3>
-                                <span class="app-version">v1.0</span>
-                            </div>
-                            <div class="app-badges">
-                                <span class="app-badge badge-ios">iOS / Web</span>
-                            </div>
-                        </div>
-                        <p class="app-description">
-                            Convierte Word a PDF, comprime imágenes, une PDFs y extrae audio de vídeos directamente en tu navegador. Sin servidores, sin límites y 100% privado.
-                        </p>
-                        <div class="app-tags">
-                            <span class="tag">PDF</span>
-                            <span class="tag">Imágenes</span>
-                            <span class="tag">Utilidades</span>
-                        </div>
-                        <div class="app-actions">
-                            <a href="https://torino-orpin.vercel.app/" class="btn-download" id="web-torino" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                                <span>Visitar web</span>
-                            </a>
-                        </div>
-                        <div class="app-note-ios">
-                            <div class="app-note-ios-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                                    <path d="M12 16V12" />
-                                    <path d="M12 8H12.01" />
-                                </svg>
-                            </div>
-                            <div class="app-note-ios-text">
-                                <strong>¿Usuario de iOS / iPhone?</strong>
-                                <span>Pulsa en <strong>"Visitar web"</strong>, abre el menú de compartir en Safari y
-                                    selecciona <strong>"Añadir a pantalla de inicio"</strong> para instalarla como una
-                                    app nativa (PWA).</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- App Card: Furgolero -->
-                <article class="app-card" id="app-furgolero">
-                    <div class="app-card-glow"></div>
-                    <div class="app-card-content">
-                        <div class="app-card-header">
-                            <div class="app-icon-wrapper">
-                                <img src="assets/images/furgolero-icon.svg" alt="Furgolero App Icon" class="app-icon">
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">Furgolero</h3>
-                                <span class="app-version">v1.0</span>
-                            </div>
-                            <div class="app-badges">
-                                <span class="app-badge badge-android">Android</span>
-                                <span class="app-badge badge-ios">iOS / Web</span>
-                            </div>
-                        </div>
-                        <p class="app-description">
-                            Simula partidos de fútbol, gestiona tus equipos y disfruta de la mejor experiencia futbolera. ¡Haz tus drafts y compite!
-                        </p>
-                        <div class="app-tags">
-                            <span class="tag">Fútbol</span>
-                            <span class="tag">Simulador</span>
-                            <span class="tag">Juegos</span>
-                        </div>
-                        <div class="app-actions">
-                            <a href="assets/furgolero.apk" download="Furgolero.apk" class="btn-download"
-                                id="download-furgolero">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                    <polyline points="7 10 12 15 17 10" />
-                                    <line x1="12" y1="15" x2="12" y2="3" />
-                                </svg>
-                                <span>Descargar APK</span>
-                            </a>
-                            <a href="https://furgolero.vercel.app/" class="btn-web" id="web-furgolero" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                                <span>Visitar web</span>
-                            </a>
-                        </div>
-                        <div class="app-note-ios">
-                            <div class="app-note-ios-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                                    <path d="M12 16V12" />
-                                    <path d="M12 8H12.01" />
-                                </svg>
-                            </div>
-                            <div class="app-note-ios-text">
-                                <strong>¿Usuario de iOS / iPhone?</strong>
-                                <span>Pulsa en <strong>"Visitar web"</strong>, abre el menú de compartir en Safari y
-                                    selecciona <strong>"Añadir a pantalla de inicio"</strong> para instalarla como una
-                                    app nativa (PWA).</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- App Card: D&D Manager -->
-                <article class="app-card" id="app-dndmanager">
-                    <div class="app-card-glow"></div>
-                    <div class="app-card-content">
-                        <div class="app-card-header">
-                            <div class="app-icon-wrapper">
-                                <img src="assets/images/dnd-icon.svg" alt="D&D Manager App Icon" class="app-icon">
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">D&D Manager</h3>
-                                <span class="app-version">v1.0</span>
-                            </div>
-                            <div class="app-badges">
-                                <span class="app-badge badge-ios">Web</span>
-                            </div>
-                        </div>
-                        <p class="app-description">
-                            Gestiona tus partidas de Dragones y Mazmorras. Crea personajes, consulta el bestiario y lleva el control de tu campaña.
-                        </p>
-                        <div class="app-tags">
-                            <span class="tag">Rol</span>
-                            <span class="tag">Utilidades</span>
-                            <span class="tag">Juegos</span>
-                        </div>
-                        <div class="app-actions">
-                            <a href="https://dndmanager131.vercel.app/" class="btn-download" id="web-dndmanager" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                                <span>Visitar web</span>
-                            </a>
-                        </div>
-                        <div class="app-note-ios">
-                            <div class="app-note-ios-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                                    <path d="M12 16V12" />
-                                    <path d="M12 8H12.01" />
-                                </svg>
-                            </div>
-                            <div class="app-note-ios-text">
-                                <strong>¿Usuario de móvil?</strong>
-                                <span>Pulsa en <strong>"Visitar web"</strong>, abre el menú del navegador y
-                                    selecciona <strong>"Añadir a pantalla de inicio"</strong> para instalarla como una
-                                    app nativa (PWA).</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- App Card: Monet -->
-                <article class="app-card" id="app-monet">
-                    <div class="app-card-glow"></div>
-                    <div class="app-card-content">
-                        <div class="app-card-header">
-                            <div class="app-icon-wrapper">
-                                <img src="assets/images/monet-icon.png" alt="Monet App Icon" class="app-icon">
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">Monet</h3>
-                                <span class="app-version">v1.0</span>
-                            </div>
-                            <div class="app-badges">
-                                <span class="app-badge badge-android">Android</span>
-                                <span class="app-badge badge-ios">iOS / Web</span>
-                            </div>
-                        </div>
-                        <p class="app-description">
-                            Controla tus gastos e ingresos personales, administra presupuestos y lleva un registro detallado de tus finanzas.
-                        </p>
-                        <div class="app-tags">
-                            <span class="tag">Gastos</span>
-                            <span class="tag">Finanzas</span>
-                            <span class="tag">Utilidades</span>
-                        </div>
-                        <div class="app-actions">
-                            <a href="assets/monet.apk" download="Monet.apk" class="btn-download"
-                                id="download-monet">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                    <polyline points="7 10 12 15 17 10" />
-                                    <line x1="12" y1="15" x2="12" y2="3" />
-                                </svg>
-                                <span>Descargar APK</span>
-                            </a>
-                            <a href="https://monet131.vercel.app/" class="btn-web" id="web-monet" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                                <span>Visitar web</span>
-                            </a>
-                        </div>
-                        <div class="app-note-ios">
-                            <div class="app-note-ios-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                                    <path d="M12 16V12" />
-                                    <path d="M12 8H12.01" />
-                                </svg>
-                            </div>
-                            <div class="app-note-ios-text">
-                                <strong>¿Usuario de iOS / iPhone?</strong>
-                                <span>Pulsa en <strong>"Visitar web"</strong>, abre el menú de compartir en Safari y
-                                    selecciona <strong>"Añadir a pantalla de inicio"</strong> para instalarla como una
-                                    app nativa (PWA).</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- App Card: Remindly -->
-                <article class="app-card" id="app-remindly">
-                    <div class="app-card-glow"></div>
-                    <div class="app-card-content">
-                        <div class="app-card-header">
-                            <div class="app-icon-wrapper">
-                                <img src="assets/images/remindly-icon.svg" alt="Remindly App Icon" class="app-icon">
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">Remindly</h3>
-                                <span class="app-version">v1.0</span>
-                            </div>
-                            <div class="app-badges">
-                                <span class="app-badge badge-ios">iOS / Web</span>
-                            </div>
-                        </div>
-                        <p class="app-description">
-                            Gestor inteligente de recordatorios con avisos, repeticiones personalizadas y calendario. Diseñado como PWA para funcionar en cualquier dispositivo.
-                        </p>
-                        <div class="app-tags">
-                            <span class="tag">Recordatorios</span>
-                            <span class="tag">Productividad</span>
-                            <span class="tag">Utilidades</span>
-                        </div>
-                        <div class="app-actions">
-                            <a href="https://remindly131.vercel.app/" class="btn-download" id="web-remindly" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                                <span>Visitar web</span>
-                            </a>
-                        </div>
-                        <div class="app-note-ios">
-                            <div class="app-note-ios-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                                    <path d="M12 16V12" />
-                                    <path d="M12 8H12.01" />
-                                </svg>
-                            </div>
-                            <div class="app-note-ios-text">
-                                <strong>¿Usuario de iOS / iPhone?</strong>
-                                <span>Pulsa en <strong>"Visitar web"</strong>, abre el menú de compartir en Safari y
-                                    selecciona <strong>"Añadir a pantalla de inicio"</strong> para instalarla como una
-                                    app nativa (PWA).</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Placeholder Card: More coming soon -->
-                <article class="app-card app-card-placeholder" id="app-coming-soon">
-                    <div class="app-card-content placeholder-content">
-                        <div class="placeholder-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10" />
-                                <line x1="12" y1="8" x2="12" y2="16" />
-                                <line x1="8" y1="12" x2="16" y2="12" />
-                            </svg>
-                        </div>
-                        <h3 class="placeholder-title">Próximamente</h3>
-                        <p class="placeholder-text">Nuevas aplicaciones en camino. ¡Estate atento!</p>
-                    </div>
-                </article>
+            <div class="finder-answer" data-ui aria-live="polite" id="finder-answer">
+                <p class="finder-hint">Monet: gastos, ingresos, presupuesto y metas de ahorro. <a href="#monet">Ver
+                        Monet</a></p>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contacto">
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <span class="logo-icon">◆</span>
-                    <span class="logo-text">Snoker Studios</span>
+            <div class="finder-examples" aria-label="Ejemplos">
+                <button type="button" class="example" data-q="sortear el amigo invisible">sortear el amigo
+                    invisible</button>
+                <button type="button" class="example" data-q="pasar un Word a PDF">pasar un Word a PDF</button>
+                <button type="button" class="example" data-q="jugar un Mundial">jugar un Mundial</button>
+                <button type="button" class="example example-luck" data-luck>Que decida la suerte</button>
+            </div>
+        </section>
+
+        <!-- Catálogo: nombres grandes, pantalla fija -->
+        <section class="catalogue" id="apps" data-chapter="dark" aria-labelledby="apps-title">
+            <h2 class="catalogue-title" id="apps-title">Las siete apps</h2>
+
+            <div class="catalogue-grid">
+                <div class="catalogue-list">
+
+                    <article class="app is-active" id="monet" data-app="monet" data-name="Monet"
+                        data-web="https://monet131.vercel.app/" data-apk="assets/monet.apk">
+                        <img class="app-shot" src="assets/images/apps/monet.jpg" width="780" height="1688"
+                            alt="Pantalla de resumen de Monet con un balance de +928,60 euros en noviembre"
+                            loading="lazy">
+                        <div class="app-head">
+                            <h3 class="app-name"><a href="#monet">Monet</a></h3>
+                            <p class="app-meta">Finanzas · Android y web</p>
+                        </div>
+                        <p class="app-desc">Apunta gastos e ingresos y Monet saca el balance del mes, el
+                            presupuesto que te queda, tus límites, tus metas de ahorro y bolsas para apartar el
+                            dinero de un viaje o de un imprevisto.</p>
+                        <div class="app-actions">
+                            <a class="btn btn-solid" href="https://monet131.vercel.app/" target="_blank"
+                                rel="noopener">Abrir en el navegador</a>
+                            <a class="btn btn-tone btn-apk" href="assets/monet.apk" download="Monet.apk">Descargar
+                                APK · 4,5 MB</a>
+                            <button class="btn btn-tone btn-pass" type="button" data-pass>Pasar al móvil</button>
+                        </div>
+                        <a class="app-ios" href="#instalar" data-ios-guide>En iPhone se instala desde Safari</a>
+                    </article>
+
+                    <article class="app" id="remindly" data-app="remindly" data-name="Remindly"
+                        data-web="https://remindly131.vercel.app/">
+                        <img class="app-shot" src="assets/images/apps/remindly.jpg" width="780" height="1688"
+                            alt="Vista de hoy de Remindly con plantillas rápidas como Tomar pastilla y Beber agua"
+                            loading="lazy">
+                        <div class="app-head">
+                            <h3 class="app-name"><a href="#remindly">Remindly</a></h3>
+                            <p class="app-meta">Recordatorios · Web</p>
+                        </div>
+                        <p class="app-desc">Escribe «llamar a Ana mañana a las 9» y entiende la fecha, la hora y la
+                            categoría. Tiene avisos, repeticiones, agenda, calendario y plantillas para lo de
+                            siempre: la pastilla, el agua, la basura.</p>
+                        <div class="app-actions">
+                            <a class="btn btn-solid" href="https://remindly131.vercel.app/" target="_blank"
+                                rel="noopener">Abrir en el navegador</a>
+                            <button class="btn btn-tone btn-pass" type="button" data-pass>Pasar al móvil</button>
+                        </div>
+                        <a class="app-ios" href="#instalar" data-ios-guide>En iPhone se instala desde Safari</a>
+                    </article>
+
+                    <article class="app" id="tetoca" data-app="tetoca" data-name="TeToca"
+                        data-web="https://te-toca-beta.vercel.app/">
+                        <img class="app-shot" src="assets/images/apps/tetoca.jpg" width="780" height="1688"
+                            alt="Inicio de TeToca: organiza sorteos, equipos y el amigo invisible en segundos"
+                            loading="lazy">
+                        <div class="app-head">
+                            <h3 class="app-name"><a href="#tetoca">TeToca</a></h3>
+                            <p class="app-meta">Sorteos · Web</p>
+                        </div>
+                        <p class="app-desc">Reparte equipos equilibrados, monta el amigo invisible sin pedirle el
+                            email a nadie, gira la ruleta o sortea premios. Todo se calcula en tu navegador, sin
+                            registro y sin anuncios.</p>
+                        <div class="app-actions">
+                            <a class="btn btn-solid" href="https://te-toca-beta.vercel.app/" target="_blank"
+                                rel="noopener">Abrir en el navegador</a>
+                            <button class="btn btn-tone btn-pass" type="button" data-pass>Pasar al móvil</button>
+                        </div>
+                        <a class="app-ios" href="#instalar" data-ios-guide>En iPhone se instala desde Safari</a>
+                    </article>
+
+                    <article class="app" id="torino" data-app="torino" data-name="Torino Tools"
+                        data-web="https://torino-orpin.vercel.app/">
+                        <img class="app-shot" src="assets/images/apps/torino.jpg" width="780" height="1688"
+                            alt="Torino Tools: zona para arrastrar un archivo Word y convertirlo a PDF"
+                            loading="lazy">
+                        <div class="app-head">
+                            <h3 class="app-name"><a href="#torino">Torino Tools</a></h3>
+                            <p class="app-meta">Archivos · Web</p>
+                        </div>
+                        <p class="app-desc">Pasa un Word a PDF, comprime imágenes, une varios PDF y saca el audio
+                            de un vídeo. Los archivos no salen de tu navegador: sin subidas, sin límite y sin
+                            marcas de agua.</p>
+                        <div class="app-actions">
+                            <a class="btn btn-solid" href="https://torino-orpin.vercel.app/" target="_blank"
+                                rel="noopener">Abrir en el navegador</a>
+                            <button class="btn btn-tone btn-pass" type="button" data-pass>Pasar al móvil</button>
+                        </div>
+                        <a class="app-ios" href="#instalar" data-ios-guide>En iPhone se instala desde Safari</a>
+                    </article>
+
+                    <article class="app" id="furgolero" data-app="furgolero" data-name="Furgolero"
+                        data-web="https://furgolero.vercel.app/" data-apk="assets/furgolero.apk">
+                        <img class="app-shot" src="assets/images/apps/furgolero.jpg" width="780" height="1688"
+                            alt="Furgolero: elección entre Mundiales de 1970 a 2026, Premier League y La Liga"
+                            loading="lazy">
+                        <div class="app-head">
+                            <h3 class="app-name"><a href="#furgolero">Furgolero</a></h3>
+                            <p class="app-meta">Fútbol · Android y web</p>
+                        </div>
+                        <p class="app-desc">Haz el draft, abre sobres, alinea a tus once y juega el torneo de
+                            octavos a la final. Mundiales de 1970 a 2026, Premier League y La Liga de la temporada
+                            2025-26.</p>
+                        <div class="app-actions">
+                            <a class="btn btn-solid" href="https://furgolero.vercel.app/" target="_blank"
+                                rel="noopener">Abrir en el navegador</a>
+                            <a class="btn btn-tone btn-apk" href="assets/furgolero.apk"
+                                download="Furgolero.apk">Descargar APK · 4,2 MB</a>
+                            <button class="btn btn-tone btn-pass" type="button" data-pass>Pasar al móvil</button>
+                        </div>
+                        <a class="app-ios" href="#instalar" data-ios-guide>En iPhone se instala desde Safari</a>
+                    </article>
+
+                    <article class="app" id="dnd" data-app="dnd" data-name="D&amp;D Manager"
+                        data-web="https://dndmanager131.vercel.app/">
+                        <img class="app-shot" src="assets/images/apps/dnd.jpg" width="780" height="1688"
+                            alt="D&amp;D Manager: lista de personajes con Elyndra Lunanoche, maga de nivel 5"
+                            loading="lazy">
+                        <div class="app-head">
+                            <h3 class="app-name"><a href="#dnd">D&amp;D Manager</a></h3>
+                            <p class="app-meta">Rol · Web</p>
+                        </div>
+                        <p class="app-desc">Fichas de personaje, panel de Dungeon Master y bestiario para tus
+                            partidas de Dragones y Mazmorras. Con cuenta se sincroniza entre dispositivos; sin
+                            ella, funciona en modo local.</p>
+                        <div class="app-actions">
+                            <a class="btn btn-solid" href="https://dndmanager131.vercel.app/" target="_blank"
+                                rel="noopener">Abrir en el navegador</a>
+                            <button class="btn btn-tone btn-pass" type="button" data-pass>Pasar al móvil</button>
+                        </div>
+                        <a class="app-ios" href="#instalar" data-ios-guide>En iPhone se instala desde Safari</a>
+                    </article>
+
+                    <article class="app" id="nuztracker" data-app="nuztracker" data-name="NuzTracker"
+                        data-web="https://lockes.vercel.app/" data-apk="assets/nuztracker.apk">
+                        <img class="app-shot" src="assets/images/apps/nuztracker.jpg" width="780" height="1688"
+                            alt="Portada de NuzTracker: Crea tu Nuzlocke, con las reglas básicas debajo"
+                            loading="lazy">
+                        <div class="app-head">
+                            <h3 class="app-name"><a href="#nuztracker">NuzTracker</a></h3>
+                            <p class="app-meta">Pokémon · Android y web</p>
+                        </div>
+                        <p class="app-desc">Para tus Nuzlockes: apunta cada encuentro y cada baja, lleva el equipo
+                            al día y consulta la Pokédex y las reglas sin salir de la app.</p>
+                        <div class="app-actions">
+                            <a class="btn btn-solid" href="https://lockes.vercel.app/" target="_blank"
+                                rel="noopener">Abrir en el navegador</a>
+                            <a class="btn btn-tone btn-apk" href="assets/nuztracker.apk"
+                                download="NuzTracker.apk">Descargar APK · 21 MB</a>
+                            <button class="btn btn-tone btn-pass" type="button" data-pass>Pasar al móvil</button>
+                        </div>
+                        <a class="app-ios" href="#instalar" data-ios-guide>En iPhone se instala desde Safari</a>
+                    </article>
+
                 </div>
-                <p class="footer-tagline">Creando aplicaciones con pasión y dedicación.</p>
+
+                <figure class="frame" aria-hidden="true">
+                    <div class="frame-pics">
+                        <img src="assets/images/apps/monet.jpg" alt="" data-for="monet" class="is-on">
+                        <img src="assets/images/apps/remindly.jpg" alt="" data-for="remindly" loading="lazy">
+                        <img src="assets/images/apps/tetoca.jpg" alt="" data-for="tetoca" loading="lazy">
+                        <img src="assets/images/apps/torino.jpg" alt="" data-for="torino" loading="lazy">
+                        <img src="assets/images/apps/furgolero.jpg" alt="" data-for="furgolero" loading="lazy">
+                        <img src="assets/images/apps/dnd.jpg" alt="" data-for="dnd" loading="lazy">
+                        <img src="assets/images/apps/nuztracker.jpg" alt="" data-for="nuztracker" loading="lazy">
+                    </div>
+                    <figcaption class="frame-cap" id="frame-cap">Monet, resumen del mes con datos de ejemplo.
+                    </figcaption>
+                </figure>
             </div>
-            <div class="footer-links">
-                <h4>Navegación</h4>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#apps">Aplicaciones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+        </section>
+
+        <!-- Instalar: un deslizador recorre los pasos -->
+        <section class="install" id="instalar" data-chapter="light" aria-labelledby="install-title">
+            <h2 class="sr-only" id="install-title">Cómo instalar las apps en el móvil</h2>
+
+            <div class="install-switch" role="group" aria-label="Tu móvil">
+                <button type="button" class="switch" data-track="android" aria-pressed="true">Android</button>
+                <button type="button" class="switch" data-track="ios" aria-pressed="false">iPhone</button>
             </div>
-            <div class="footer-links">
-                <h4>Apps</h4>
-                <ul>
-                    <li><a href="#app-nuztracker">NuzTracker</a></li>
-                    <li><a href="#app-tetoca">TeToca</a></li>
-                    <li><a href="#app-torino">Torino Tools</a></li>
-                    <li><a href="#app-furgolero">Furgolero</a></li>
-                    <li><a href="#app-dndmanager">D&D Manager</a></li>
-                    <li><a href="#app-monet">Monet</a></li>
-                    <li><a href="#app-remindly">Remindly</a></li>
-                </ul>
+
+            <ol class="steps" data-track="android">
+                <li class="step is-current">
+                    <div class="step-text">
+                        <h3 class="step-clause">Primero, descarga el APK</h3>
+                        <p class="step-detail">Pulsa Descargar APK en la app que quieras. El navegador avisa porque
+                            el archivo no viene de Google Play: dale a Descargar igualmente.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-sheet">
+                            <p class="ui-title">¿Descargar Furgolero.apk de todos modos?</p>
+                            <p class="ui-body">Este tipo de archivo puede dañar tu dispositivo. Descárgalo solo si
+                                confías en la fuente.</p>
+                            <p class="ui-file">Furgolero.apk · 4,2 MB</p>
+                            <div class="ui-row-btns"><span class="ui-text-btn">Cancelar</span><span
+                                    class="ui-text-btn is-pressed">Descargar</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-text">
+                        <h3 class="step-clause">Después, abre el archivo</h3>
+                        <p class="step-detail">Cuando termine, toca la notificación de la descarga o busca el
+                            archivo en la carpeta Descargas.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-notice">
+                            <span class="ui-dot" aria-hidden="true"></span>
+                            <div>
+                                <p class="ui-title">Furgolero.apk</p>
+                                <p class="ui-body">Descarga completada · 4,2 MB</p>
+                            </div>
+                            <span class="ui-text-btn is-pressed">Abrir</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-text">
+                        <h3 class="step-clause">Luego, da permiso al navegador</h3>
+                        <p class="step-detail">La primera vez Android pide permitir apps de esta fuente. Actívalo; si
+                            quieres, lo quitas al terminar.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-sheet">
+                            <p class="ui-path">Instalar apps desconocidas</p>
+                            <p class="ui-title">Chrome</p>
+                            <div class="ui-toggle-row">
+                                <span>Permitir de esta fuente</span>
+                                <span class="ui-toggle is-on" aria-hidden="true"></span>
+                            </div>
+                            <p class="ui-body">Tu teléfono y tus datos son más vulnerables a ataques de apps
+                                desconocidas.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-text">
+                        <h3 class="step-clause">Por último, pulsa Instalar</h3>
+                        <p class="step-detail">En unos segundos la tienes con las demás apps. Para actualizarla,
+                            repite esto con el APK nuevo.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-sheet">
+                            <img class="ui-appicon" src="assets/images/apps/furgolero.jpg" alt="">
+                            <p class="ui-title">Furgolero</p>
+                            <p class="ui-body">¿Quieres instalar esta aplicación?</p>
+                            <div class="ui-row-btns"><span class="ui-text-btn">Cancelar</span><span
+                                    class="ui-text-btn is-pressed">Instalar</span></div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+
+            <ol class="steps" data-track="ios">
+                <li class="step is-current">
+                    <div class="step-text">
+                        <h3 class="step-clause">Primero, ábrela en Safari</h3>
+                        <p class="step-detail">Pulsa Abrir en el navegador en la app que quieras. En el iPhone no
+                            hay APK: la app se instala desde la web.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-safari">
+                            <img class="ui-page" src="assets/images/apps/monet.jpg" alt="">
+                            <div class="ui-address"><span>monet131.vercel.app</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-text">
+                        <h3 class="step-clause">Después, pulsa Compartir</h3>
+                        <p class="step-detail">Es el cuadrado con la flecha hacia arriba, en la barra de abajo de
+                            Safari.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-safari">
+                            <img class="ui-page" src="assets/images/apps/monet.jpg" alt="">
+                            <div class="ui-toolbar">
+                                <span class="ui-tool">‹</span><span class="ui-tool">›</span>
+                                <span class="ui-tool is-pressed"><svg viewBox="0 0 24 24" width="22" height="22"
+                                        aria-hidden="true">
+                                        <path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 11v9h14v-9" fill="none"
+                                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></span>
+                                <span class="ui-tool">□</span><span class="ui-tool">⧉</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-text">
+                        <h3 class="step-clause">Luego, Añadir a pantalla de inicio</h3>
+                        <p class="step-detail">Baja un poco en el menú que se abre hasta encontrar la opción.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-sheet ui-list">
+                            <p class="ui-path">Monet · monet131.vercel.app</p>
+                            <span class="ui-item">Copiar</span>
+                            <span class="ui-item">Añadir a la lista de lectura</span>
+                            <span class="ui-item is-pressed">Añadir a pantalla de inicio</span>
+                            <span class="ui-item">Añadir a favoritos</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-text">
+                        <h3 class="step-clause">Por último, pulsa Añadir</h3>
+                        <p class="step-detail">Sale un icono en la pantalla de inicio y la app se abre a pantalla
+                            completa, como cualquier otra.</p>
+                    </div>
+                    <div class="step-ui" data-ui>
+                        <div class="ui-sheet">
+                            <div class="ui-row-btns ui-top"><span class="ui-text-btn">Cancelar</span><span
+                                    class="ui-text-btn is-pressed">Añadir</span></div>
+                            <div class="ui-add">
+                                <img class="ui-appicon" src="assets/images/apps/monet.jpg" alt="">
+                                <div>
+                                    <p class="ui-title">Monet</p>
+                                    <p class="ui-body">monet131.vercel.app</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+
+            <div class="install-track">
+                <div class="rail" aria-hidden="true"><div class="rail-fill" id="rail-fill"></div></div>
+                <input class="track" id="track" type="range" min="0" max="3" step="1" value="0"
+                    aria-label="Paso de la instalación">
+                <ol class="stage-names" aria-hidden="true">
+                    <li data-stage="0" class="is-on">Descargar</li>
+                    <li data-stage="1">Abrir</li>
+                    <li data-stage="2">Permitir</li>
+                    <li data-stage="3">Instalar</li>
+                </ol>
             </div>
+        </section>
+
+        <!-- Novedades: frase y tabla a la derecha -->
+        <section class="news" id="novedades" data-chapter="dark" aria-labelledby="news-title">
+            <h2 class="news-title" id="news-title">Lo último que ha llegado</h2>
+            <div class="news-body">
+                <figure class="news-pic">
+                    <img src="assets/images/apps/monet-bolsas.jpg" width="780" height="1688"
+                        alt="Pantalla de Bolsas de dinero en Monet: separa el dinero por su origen" loading="lazy">
+                    <figcaption>Bolsas de dinero, en Monet desde agosto.</figcaption>
+                </figure>
+                <p class="news-word">2026</p>
+                <table class="news-table">
+                    <caption class="sr-only">Cambios en las apps durante 2026, del más reciente al más antiguo
+                    </caption>
+                    <thead class="sr-only">
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">App</th>
+                            <th scope="col">Cambio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><time datetime="2026-09-04">4 sep</time></td>
+                            <td>Monet</td>
+                            <td><a href="#monet">Arreglos en bolsas y movimientos</a></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-08-26">26 ago</time></td>
+                            <td>Monet</td>
+                            <td><a href="#monet">Bolsas de dinero</a></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-08-26">26 ago</time></td>
+                            <td>Remindly</td>
+                            <td><a href="#remindly">Llega a la web</a></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-08-24">24 ago</time></td>
+                            <td>Monet</td>
+                            <td><a href="#monet">Llega, con APK para Android</a></td>
+                        </tr>
+                        <tr class="group">
+                            <td><time datetime="2026-07-18">18 jul</time></td>
+                            <td>D&amp;D Manager</td>
+                            <td><a href="#dnd">Llega a la web</a></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-07-05">5 jul</time></td>
+                            <td>Furgolero</td>
+                            <td><a href="#furgolero">Llega, con APK para Android</a></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-06-30">30 jun</time></td>
+                            <td>Torino Tools</td>
+                            <td><a href="#torino">Llega a la web</a></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-06-30">30 jun</time></td>
+                            <td>TeToca</td>
+                            <td><a href="#tetoca">Llega a la web</a></td>
+                        </tr>
+                        <tr class="group">
+                            <td><time datetime="2026-06-23">23 jun</time></td>
+                            <td>NuzTracker</td>
+                            <td><a href="#nuztracker">APK para Android</a></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-06-22">22 jun</time></td>
+                            <td>NuzTracker</td>
+                            <td><a href="#nuztracker">Llega a la web</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Preguntas: título ancho, preguntas sangradas -->
+        <section class="faq" id="preguntas" data-chapter="light" aria-labelledby="faq-title">
+            <h2 class="faq-title" id="faq-title">Preguntas antes de instalar</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>¿Cuánto cuestan?</summary>
+                    <p>Nada, las siete son gratis. La tienda de Furgolero se paga con las monedas que ganas en los
+                        torneos, no con dinero.</p>
+                </details>
+                <details>
+                    <summary>¿Hace falta crear una cuenta?</summary>
+                    <p>En casi ninguna. TeToca, Torino Tools, Furgolero, Monet y Remindly se abren y ya. NuzTracker y
+                        D&amp;D Manager tienen inicio de sesión para guardar tus partidas, y D&amp;D Manager también
+                        funciona en modo local, sin cuenta.</p>
+                </details>
+                <details>
+                    <summary>¿Es seguro un APK que no viene de Google Play?</summary>
+                    <p>Los APK de esta página son las mismas apps que ves en la web, preparadas para Android. Android
+                        avisa con cualquier archivo que no venga de Google Play, por eso pide permiso al navegador la
+                        primera vez. Descárgalos solo desde aquí.</p>
+                </details>
+                <details>
+                    <summary>¿Y si tengo iPhone?</summary>
+                    <p>Los APK son solo para Android. En iPhone abre la app en Safari, pulsa Compartir y elige Añadir a
+                        pantalla de inicio: queda como una app más, con su icono. <a href="#instalar"
+                            data-ios-guide>Ver los pasos</a>.</p>
+                </details>
+                <details>
+                    <summary>¿Dónde se guardan mis archivos y mis listas?</summary>
+                    <p>Torino Tools convierte los archivos dentro de tu navegador y TeToca hace los sorteos en tu
+                        dispositivo: nada de eso se sube a un servidor. En las apps con cuenta, lo que sincronizas se
+                        guarda en tu cuenta.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo sé si hay una versión nueva?</summary>
+                    <p>Las versiones web se actualizan solas al recargar. Para los APK, mira la fecha en <a
+                            href="#novedades">Novedades</a>: si es más reciente que tu descarga, baja el APK otra vez e
+                        instálalo encima.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cierre: invitación sobre el nombre recortado -->
+    <footer class="foot" id="contacto" data-chapter="dark" aria-labelledby="foot-title">
+        <div class="foot-top">
+            <div class="foot-invite">
+                <h2 class="foot-title" id="foot-title">Te toca elegir</h2>
+                <button type="button" class="btn btn-accent btn-big" data-luck>Que decida la suerte</button>
+                <p class="foot-luck" id="foot-luck" aria-live="polite"></p>
+            </div>
+            <ul class="foot-links">
+                <li><a href="#apps">Las siete apps</a></li>
+                <li><a href="#instalar">Cómo instalar</a></li>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#preguntas">Preguntas</a></li>
+            </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Snoker Studios. Todos los derechos reservados.</p>
+        <div class="foot-legal">
+            <p>© <span id="year">2026</span> Snoker Studios</p>
+            <a href="#top">Volver arriba</a>
         </div>
+        <p class="foot-name" aria-hidden="true">Snoker</p>
     </footer>
 
-    <!-- Toast notification -->
-    <div class="toast" id="toast">
-        <div class="toast-content">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="8" x2="12" y2="12" />
-                <line x1="12" y1="16" x2="12.01" y2="16" />
-            </svg>
-            <span id="toast-message">Descarga disponible próximamente</span>
-        </div>
-    </div>
+    <dialog class="pass" id="pass-dialog" aria-labelledby="pass-title">
+        <form method="dialog" class="pass-inner">
+            <h2 class="pass-title" id="pass-title">Abre Monet en el móvil</h2>
+            <p class="pass-text">Apunta la cámara del móvil a este código.</p>
+            <div class="pass-qr" id="pass-qr"></div>
+            <p class="pass-url" id="pass-url"></p>
+            <div class="pass-btns">
+                <button type="button" class="btn btn-solid" id="pass-copy">Copiar enlace</button>
+                <button type="submit" class="btn btn-tone">Cerrar</button>
+            </div>
+        </form>
+    </dialog>
 
-    <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Apps de Snoker Studios",
+      "itemListElement": [
+        {"@type": "SoftwareApplication", "position": 1, "name": "Monet", "applicationCategory": "FinanceApplication", "operatingSystem": "Android, Web", "url": "https://monet131.vercel.app/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}},
+        {"@type": "SoftwareApplication", "position": 2, "name": "Remindly", "applicationCategory": "ProductivityApplication", "operatingSystem": "Web", "url": "https://remindly131.vercel.app/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}},
+        {"@type": "SoftwareApplication", "position": 3, "name": "TeToca", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "url": "https://te-toca-beta.vercel.app/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}},
+        {"@type": "SoftwareApplication", "position": 4, "name": "Torino Tools", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "url": "https://torino-orpin.vercel.app/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}},
+        {"@type": "SoftwareApplication", "position": 5, "name": "Furgolero", "applicationCategory": "GameApplication", "operatingSystem": "Android, Web", "url": "https://furgolero.vercel.app/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}},
+        {"@type": "SoftwareApplication", "position": 6, "name": "D&D Manager", "applicationCategory": "GameApplication", "operatingSystem": "Web", "url": "https://dndmanager131.vercel.app/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}},
+        {"@type": "SoftwareApplication", "position": 7, "name": "NuzTracker", "applicationCategory": "GameApplication", "operatingSystem": "Android, Web", "url": "https://lockes.vercel.app/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}
+      ]
+    }
+    </script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
