@@ -130,6 +130,7 @@ ol {
 .app-name,
 .step-clause,
 .news-title,
+.art-title,
 .faq-title,
 .foot-title,
 .pass-title,
@@ -571,6 +572,14 @@ html:not(.js) .slot img:first-child {
     height: 64px;
     object-fit: cover;
     object-position: 50% 12%;
+}
+
+/* El escenario de pixel art en el buscador: sin suavizar y encuadrado en el suelo */
+.pick-shot.is-art,
+.hit img.is-art {
+    image-rendering: pixelated;
+    object-position: 0 100%;
+    background: #2b3047;
 }
 
 .hit-name {
@@ -1316,6 +1325,81 @@ html:not(.js) .install-track {
 }
 
 /* ------------------------------------------------------------
+   Arte: Snoker Art, el escenario a lo ancho
+   ------------------------------------------------------------ */
+.art {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+    padding: var(--section) var(--gutter) 0;
+    background: var(--surface);
+    overflow: hidden;
+}
+
+.art-title {
+    grid-column: 1 / span 7;
+    font-size: var(--step-head);
+    line-height: 0.9;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.art-slot {
+    position: relative;
+    display: inline-block;
+    width: 0.82em;
+    height: 0.82em;
+    margin: 0 0.04em;
+    vertical-align: -0.06em;
+}
+
+.art-slot img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    opacity: 0;
+    transform: translateY(0.08em);
+    transition: opacity 0.25s ease, transform 0.4s var(--ease-out);
+}
+
+.art-slot img.is-on,
+html:not(.js) .art-slot img:first-child {
+    opacity: 1;
+    transform: none;
+}
+
+.art-text {
+    grid-column: 9 / span 4;
+    align-self: end;
+}
+
+.art-text p {
+    max-width: 40ch;
+    margin-bottom: 24px;
+}
+
+.art-scene {
+    grid-column: 1 / -1;
+    margin: clamp(56px, 6vw, 96px) calc(-1 * var(--gutter)) 0;
+}
+
+.art-scene img {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.art-scene figcaption {
+    padding: 14px var(--gutter) 40px;
+    font-size: var(--step-small);
+    color: var(--muted);
+}
+
+/* ------------------------------------------------------------
    Preguntas
    ------------------------------------------------------------ */
 .faq {
@@ -1603,6 +1687,15 @@ html.js .rise.in {
         grid-column: 3 / -1;
     }
 
+    .art-title {
+        grid-column: 1 / -1;
+    }
+
+    .art-text {
+        grid-column: 1 / span 9;
+        margin-top: 32px;
+    }
+
     .foot {
         min-height: 0;
     }
@@ -1667,7 +1760,7 @@ html.js .rise.in {
 @media (max-width: 760px) {
     :root {
         --bar-h: 64px;
-        --section: 112px;
+        --section: 96px;
     }
 
     .bar {
@@ -1786,14 +1879,14 @@ html.js .rise.in {
     }
 
     .app {
-        padding: 0 0 56px;
+        padding: 0 0 48px;
     }
 
     .app-shot {
         display: block;
         width: 100%;
         height: auto;
-        aspect-ratio: 16 / 10;
+        aspect-ratio: 2 / 1;
         object-fit: cover;
         object-position: 50% 6%;
         margin-bottom: 20px;
@@ -1863,15 +1956,18 @@ html.js .rise.in {
         display: block;
     }
 
+    /* Una línea por cambio: fecha, app y cambio */
     .news-table tr {
         display: grid;
-        grid-template-columns: 1fr auto;
-        column-gap: 16px;
-        padding: 12px 0;
+        grid-template-columns: 3.6em auto minmax(0, 1fr);
+        column-gap: 12px;
+        align-items: baseline;
+        padding: 9px 0;
+        font-size: var(--step-small);
     }
 
     .news-table tr.group {
-        padding-top: 36px;
+        padding-top: 28px;
     }
 
     .news-table td,
@@ -1880,21 +1976,9 @@ html.js .rise.in {
         width: auto;
     }
 
-    .news-table td:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .news-table td:nth-child(3) {
-        grid-column: 2;
-        grid-row: 1 / span 2;
-        align-self: center;
-    }
-
     .news-table td:nth-child(2) {
-        grid-column: 1;
-        grid-row: 2;
-        color: var(--bg);
+        white-space: nowrap;
+        font-weight: 600;
     }
 
     .news-pic {
@@ -1902,6 +1986,22 @@ html.js .rise.in {
         width: 60%;
         align-self: flex-end;
         margin-top: 48px;
+    }
+
+    .art {
+        display: block;
+    }
+
+    .art-title {
+        font-size: 11vw;
+    }
+
+    .art-text {
+        margin-top: 28px;
+    }
+
+    .art-text .btn {
+        width: 100%;
     }
 
     .faq {

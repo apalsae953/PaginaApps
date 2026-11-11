@@ -39,9 +39,20 @@
             'dungeon', 'bestiario', 'campana', 'dados', 'partida de rol', 'monstruos', 'dragones y mazmorras'],
         nuztracker: ['pokemon', 'nuzlocke', 'nuzlockes', 'pokedex', 'captura', 'capturas', 'encuentro', 'encuentros',
             'entrenador', 'locke', 'lockes', 'muertes', 'bajas', 'reto pokemon', 'equipo pokemon'],
+        nutriplan: ['comida', 'comidas', 'comer', 'menu', 'menus', 'dieta', 'dietas', 'receta', 'recetas', 'compra',
+            'cocinar', 'cena', 'cenas', 'almuerzo', 'familia', 'supermercado', 'semana', 'nutricion', 'plato', 'platos',
+            'lista de la compra', 'menu de la semana', 'que comemos', 'que comer'],
+        arbitrajes: ['arbitro', 'arbitros', 'arbitraje', 'arbitrajes', 'arbitrar', 'designacion', 'designaciones', 'pitar',
+            'pito', 'cobrar', 'cobrado', 'cobros', 'pendiente', 'temporada', 'federacion', 'colegiado', 'me deben',
+            'partido', 'partidos', 'partidos que arbitro', 'partidos arbitrados'],
+        arte: ['pixel', 'pixeles', 'pixel art', 'arte', 'sprite', 'sprites', 'tileset', 'tilesets', 'dibujo', 'dibujos',
+            'ilustracion', 'escenario', 'escenarios', 'videojuego', 'videojuegos', 'encargo', 'encargos', 'galeria', '2d',
+            '3d', 'retro', 'arte para mi juego'],
     };
 
     const CAPTIONS = {
+        nutriplan: 'NutriPlan, el plan de comidas de la familia.',
+        arbitrajes: 'Mis Arbitrajes, el resumen de la temporada 2026/27.',
         monet: 'Monet, resumen del mes con datos de ejemplo.',
         remindly: 'Remindly, la vista de hoy con plantillas rápidas.',
         tetoca: 'TeToca, inicio con sus herramientas.',
@@ -58,9 +69,24 @@
         web: el.dataset.web,
         apk: el.dataset.apk || '',
         meta: $('.app-meta', el).textContent.trim(),
+        desc: $('.app-desc', el).textContent.replace(/\s+/g, ' ').trim(),
         shot: `assets/images/apps/${el.dataset.app}.jpg`,
     }));
     const byId = Object.fromEntries(apps.map((a) => [a.id, a]));
+
+    // Snoker Art no es una app, pero el buscador también lleva a su sección.
+    const artSection = $('#arte');
+    const searchable = artSection ? [...apps, {
+        id: 'arte',
+        el: artSection,
+        name: 'Snoker Art',
+        web: 'https://snokerart.vercel.app/',
+        apk: '',
+        meta: 'Pixel art · Web',
+        desc: $('.art-text p', artSection).textContent.replace(/\s+/g, ' ').trim(),
+        shot: 'assets/images/art/nivel-de-los-espectros.png',
+        art: true,
+    }] : apps;
 
     /* ---------- Barra: toma el color del capítulo que tiene debajo ---------- */
     const bar = $('#bar');
@@ -108,7 +134,7 @@
         if (bar.classList.contains('is-open') && !bar.contains(e.target)) setMenu(false);
     });
 
-    /* ---------- Portada: la ventana del titular pasa por las siete apps ---------- */
+    /* ---------- Portada: la ventana del titular pasa por todas las apps ---------- */
     const heroTitle = $('#hero-title');
     const slotLists = $$('.slot', heroTitle).map((s) => $$('img', s));
     slotLists.flat().forEach((img) => { img.style.objectPosition = img.dataset.pos || '50% 20%'; });
@@ -138,6 +164,29 @@
             .observe(heroTitle);
     } else {
         startSlot();
+    }
+
+    /* ---------- Arte: los sprites del titular se turnan ---------- */
+    const artSlot = $('.art-slot');
+    if (artSlot) {
+        const sprites = $$('img', artSlot);
+        let spriteIndex = 0;
+        let spriteTimer = null;
+        const showSprite = (i) => sprites.forEach((img, k) => img.classList.toggle('is-on', k === i));
+        showSprite(0);
+        if (!reduce.matches && 'IntersectionObserver' in window) {
+            new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting && !spriteTimer) {
+                    spriteTimer = setInterval(() => {
+                        spriteIndex = (spriteIndex + 1) % sprites.length;
+                        showSprite(spriteIndex);
+                    }, 1300);
+                } else if (!entry.isIntersecting) {
+                    clearInterval(spriteTimer);
+                    spriteTimer = null;
+                }
+            }).observe(artSlot);
+        }
     }
 
     /* ---------- Catálogo: la app del centro de la pantalla manda ---------- */
@@ -198,7 +247,7 @@
         const nq = norm(q);
         if (!nq) return [];
         const tokens = nq.split(' ').filter((t) => t.length >= 3 && !STOP.has(t));
-        return apps.map((a) => {
+        return searchable.map((a) => {
             let score = 0;
             for (const k of NKEYS[a.id] || []) {
                 if (k.includes(' ')) {
@@ -227,6 +276,7 @@
         img.alt = '';
         img.width = 64;
         img.height = 64;
+        if (a.art) img.className = 'is-art';
         const text = document.createElement('div');
         const name = document.createElement('p');
         name.className = 'hit-name';
@@ -237,7 +287,7 @@
         text.append(name, why);
         const go = document.createElement('span');
         go.className = 'hit-go';
-        go.textContent = 'Ver ficha';
+        go.textContent = a.art ? 'Ver el arte' : 'Ver ficha';
         row.append(img, text, go);
         return row;
     }
@@ -252,16 +302,15 @@
     // La primera coincidencia sale como una ficha pequeña, con sus botones.
     function pickCard(a, lead) {
         const card = el('div', 'pick');
-        const img = el('img', 'pick-shot');
+        const img = el('img', a.art ? 'pick-shot is-art' : 'pick-shot');
         img.src = a.shot;
         img.alt = '';
         const body = el('div', 'pick-body');
         if (lead) body.append(el('p', 'pick-lead', lead));
         body.append(el('p', 'pick-name', a.name), el('p', 'pick-meta', a.meta));
-        const desc = $('.app-desc', a.el);
-        if (desc) body.append(el('p', 'pick-desc', desc.textContent.replace(/\s+/g, ' ').trim()));
+        if (a.desc) body.append(el('p', 'pick-desc', a.desc));
         const actions = el('div', 'pick-actions');
-        const open = el('a', 'btn btn-solid', 'Abrir en el navegador');
+        const open = el('a', 'btn btn-solid', a.art ? 'Ver la galería' : 'Abrir en el navegador');
         open.href = a.web;
         open.target = '_blank';
         open.rel = 'noopener';
@@ -272,7 +321,7 @@
             apk.setAttribute('download', '');
             actions.append(apk);
         }
-        const more = el('a', 'btn btn-tone', 'Ver ficha');
+        const more = el('a', 'btn btn-tone', a.art ? 'Ver el arte' : 'Ver ficha');
         more.href = `#${a.id}`;
         actions.append(more);
         body.append(actions);
@@ -285,7 +334,7 @@
         if (!list.length) {
             const p = el('p', 'finder-empty');
             p.textContent = norm(input.value)
-                ? 'Eso no lo hace ninguna todavía. Prueba con otras palabras o mira las siete aquí debajo.'
+                ? 'Eso no lo hace ninguna todavía. Prueba con otras palabras o mira las nueve aquí debajo.'
                 : 'Escribe lo que necesitas: sortear, pasar a PDF, apuntar gastos…';
             answer.append(p);
             return;
@@ -496,6 +545,7 @@
             '.catalogue-title', '.app-head', '.app-desc', '.app-actions', '.frame',
             '.install-switch', '.install-track',
             '.news-title', '.news-pic', '.news-word', '.news-table tr',
+            '.art-title', '.art-text', '.art-scene',
             '.faq-title', '.faq details',
             '.foot-title', '.foot-invite .btn', '.foot-links li', '.foot-legal',
         ];
